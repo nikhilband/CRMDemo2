@@ -8,7 +8,6 @@ import org.testng.annotations.Test;
 
 import com.learnautomation.pages.BaseClass;
 import com.learnautomation.pages.LoginPage;
-import com.learnautomation.utility.BrowserFactory;
 import com.learnautomation.utility.ExelDataProvider;
 
 public class LoginTestCRM extends BaseClass {

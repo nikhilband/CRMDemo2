@@ -15,19 +15,19 @@ public class BrowserFactory {
 		
 		if(browserName.equals("Chrome")){
 			
-			System.setProperty("webdriver.chrome.driver", "./Driver/chromedriver.exe");
+			System.setProperty("webdriver.chrome.driver", "./Drivers/chromedriver.exe");
 			driver = new ChromeDriver();
 			
 		}
 		else if (browserName.equals("Firefox")) {
 			
-			System.setProperty("webdriver.gecko.driver", "./Driver/geckodriver.exe");
+			System.setProperty("webdriver.gecko.driver", "./Drivers/geckodriver.exe");
 			driver = new FirefoxDriver();
 			
 		}
 		else if (browserName.equals("IE"))
 		{
-			System.setProperty("webdriver.ie.driver", "./Driver/IEDriverServer");
+			System.setProperty("webdriver.ie.driver", "./Drivers/IEDriverServer");
 			driver = new InternetExplorerDriver();
 			
 		}

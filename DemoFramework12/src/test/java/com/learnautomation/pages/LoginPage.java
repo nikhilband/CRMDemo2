@@ -15,7 +15,7 @@ public class LoginPage {
 //	}
 
 	
-	@FindBy(xpath =  "//a[text()='लॉग इन करें']")    WebElement login1;
+	@FindBy(xpath =  "//a[@href='https://ui.freecrm.com']")  WebElement login1;
 	@FindBy(xpath= "//a[contains(text(),'Sign Up')]") WebElement sinup;
 	@FindBy(xpath = "//a[contains(text(),'Got an account? Log in here')]") WebElement login;
 	@FindBy(name= "email")WebElement uname;
@@ -25,9 +25,19 @@ public class LoginPage {
 	
 	public void loginToCRM(String usernameApplication,String passwordApplication) {
 		
+		try {
+			Thread.sleep(2000);
+		} catch (InterruptedException e) {
+			
+		}
 		login1.click();
 		//sinup.click();
 		//login.click();
+		try {
+			Thread.sleep(2000);
+		} catch (InterruptedException e) {
+			
+		}
 		uname.sendKeys(usernameApplication);
 		password1.sendKeys(passwordApplication);
 		log.click();
